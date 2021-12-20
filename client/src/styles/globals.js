@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-
 export default createGlobalStyle`
 
   *,
@@ -47,13 +46,13 @@ export default createGlobalStyle`
 
 
   body {
-    font-family: ${props => props.theme.fonts.main};
+    font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.6;
-    color: ${props => props.theme.colors.primary1};
+    color: ${(props) => props.theme.colors.primary1};
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: all .2s linear;
     margin: 0;
     padding: 0;
@@ -62,13 +61,19 @@ export default createGlobalStyle`
     border: none;
   }
 
-  a, button, img {
+  .container {
+    padding: 0 20rem;
+  }
+
+
+
+  /* a, button, img {
     cursor: pointer;
     color: var(--color-main);
   }
 
   h1,h2,h3,h4,h5,h6,button {
-    font-family: ${props => props.theme.fonts.title};
+    font-family: ${(props) => props.theme.fonts.title};
   }
 
   h1 {
@@ -81,13 +86,13 @@ export default createGlobalStyle`
   }
 
   p {
-    font-family: ${props => props.theme.fonts.main};
+    font-family: ${(props) => props.theme.fonts.main};
     color: var(--color-main);
   }
 
   main {
     font-size: 1.6rem;
-    font-family: ${props => props.theme.fonts.main};
+    font-family: ${(props) => props.theme.fonts.main};
     color: var(--color-main);
   }
 
@@ -95,7 +100,7 @@ export default createGlobalStyle`
     outline: none;
     text-decoration: none;
     font-family: inherit;
-  }
+  } */
   li{
     list-style: none;
   }
