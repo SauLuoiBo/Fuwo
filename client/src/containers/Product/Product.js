@@ -11,7 +11,7 @@ const Product = () => {
     <section>
       <View>
         <View.Chil1>adsasd</View.Chil1>
-        <View.Chil1>
+        <View.Chil2>
           <ContentWrapper>
             <div className="text-wrapper">
               <Text.Title color="black">Sản phẩm</Text.Title>
@@ -48,7 +48,7 @@ const Product = () => {
               />
             </div>
           </ContentWrapper>
-        </View.Chil1>
+        </View.Chil2>
       </View>
     </section>
   );
@@ -60,10 +60,19 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
+  @media ${(props) => props.theme.breakpoints.md} {
+    justify-content: center;
+    align-items: center;
+  }
 
   .text-wrapper {
     max-width: 60%;
     text-align: justify;
+
+    @media ${(props) => props.theme.breakpoints.md} {
+      max-width: 80%;
+      text-align: center;
+    }
   }
 
   .button-wrapper {
