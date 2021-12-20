@@ -1,5 +1,5 @@
 import Layout from "./components/layout/Layout";
-import LanddingPage from "./containers/landdingPage/LanddingPage";
+import { LanddingPage, History, Product } from "./containers";
 import Theme from "./styles/Theme";
 
 function App() {
@@ -7,6 +7,8 @@ function App() {
     <Theme>
       <Layout>
         <LanddingPage />
+        <History />
+        <Product />
       </Layout>
     </Theme>
   );
