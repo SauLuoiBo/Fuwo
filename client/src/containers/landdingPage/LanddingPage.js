@@ -10,10 +10,11 @@ const LanddingPage = () => {
       <img src={LogoLeft} alt="Logo" className="logo-left" />
       <img src={Logo} alt="Logo" className="logo-brand" />
       <div className="text-wrapper ">
-        <Text.Title>
+        <Text.Title color="black">Future of the world</Text.Title>
+        <Text.Caption>
           Nghiên cứu và phát triển công nghệ để kiến tạo một thế giới, một tương
           lai tốt đẹp hơn
-        </Text.Title>
+        </Text.Caption>
       </div>
     </Wrapper>
   );
@@ -25,7 +26,7 @@ const Wrapper = styled.div`
   background-color: #f8af2b;
   width: 100%;
 
-  height: fit-content;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

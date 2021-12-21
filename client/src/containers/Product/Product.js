@@ -66,6 +66,7 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
+  padding: 4rem 0;
 
   @media ${(props) => props.theme.breakpoints.md} {
     justify-content: center;
@@ -73,7 +74,7 @@ const ContentWrapper = styled.div`
   }
 
   .text-wrapper {
-    max-width: 60%;
+    max-width: 70%;
     text-align: justify;
     padding-left: 2rem;
 
