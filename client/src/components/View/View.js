@@ -38,6 +38,6 @@ const Wrapper = styled.div`
 
 const Chil = styled.div`
   width: 100%;
-  height: fit-content;
+  height: 100%;
   display: block;
 `;

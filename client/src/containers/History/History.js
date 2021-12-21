@@ -23,6 +23,8 @@ const Wrapper = styled.section`
   background: url(${bg});
   width: 100%;
   padding: 5rem 2rem;
+  background-attachment: fixed;
+  background-size: cover;
 `;
 
 const Content = styled.div`

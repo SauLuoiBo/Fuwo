@@ -3,11 +3,15 @@ import styled from "styled-components";
 import { Text } from "..";
 import icon from "../../assets/icons/website.png";
 
-const ButtonIcon = ({ title, ...restProps }) => {
+const ButtonIcon = ({ title, img, ...restProps }) => {
   return (
     <Wrapper {...restProps}>
-      <img src={icon} alt="icon" />
-      <Text.Caption color="black">{title || ""}</Text.Caption>
+      <div className="img-wrapper">
+        <img src={img || icon} alt="icon" />
+      </div>
+      <div className="text-wrapper">
+        <Text.Caption color="black">{title || ""}</Text.Caption>
+      </div>
       <div className="bg" />
     </Wrapper>
   );
@@ -38,6 +42,16 @@ const Wrapper = styled.div`
     left: 0;
     z-index: -1;
     border-radius: 0 100px 100px 0;
+
+    @media ${(props) => props.theme.breakpoints.md} {
+      display: none;
+    }
+  }
+
+  .text-wrapper {
+    @media ${(props) => props.theme.breakpoints.md} {
+      display: none;
+    }
   }
 
   :hover {
@@ -49,12 +63,19 @@ const Wrapper = styled.div`
     }
   }
 
-  ${Text.Caption} {
-    color: red;
-  }
-
   img {
     width: 45px;
     height: 45px;
+  }
+
+  .img-wrapper {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: ${(props) => (props.select ? "yellow" : null)};
+    ${(props) => (props.select ? `transform: scale(1.1)` : null)}
   }
 `;

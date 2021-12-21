@@ -1,5 +1,12 @@
 import Layout from "./components/layout/Layout";
-import { LanddingPage, History, Product } from "./containers";
+import {
+  LanddingPage,
+  History,
+  Product,
+  Introduce,
+  Apply,
+  KeyProduct,
+} from "./containers";
 import Theme from "./styles/Theme";
 
 function App() {
@@ -9,6 +16,9 @@ function App() {
         <LanddingPage />
         <History />
         <Product />
+        <Introduce />
+        <KeyProduct />
+        <Apply />
       </Layout>
     </Theme>
   );

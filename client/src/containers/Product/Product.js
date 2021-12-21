@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { ButtonIcon, Text, View } from "../../components";
+import icon1 from "../../assets/icons/app.png";
+import icon2 from "../../assets/icons/icons8-ai-256.png";
 
 const Product = () => {
   const [select, setSelect] = React.useState(1);
@@ -10,7 +12,9 @@ const Product = () => {
   return (
     <section>
       <View>
-        <View.Chil1>adsasd</View.Chil1>
+        <View.Chil1>
+          <ImageProduct />
+        </View.Chil1>
         <View.Chil2>
           <ContentWrapper>
             <div className="text-wrapper">
@@ -32,20 +36,22 @@ const Product = () => {
                 title="Xây dựng và thiết kế Website"
               />
               <ButtonIcon
+                img={icon1}
                 select={select === 2}
                 onClick={() => Seclect(2)}
                 title="Xây dựng và phát triển App"
               />
               <ButtonIcon
+                img={icon2}
                 select={select === 3}
                 onClick={() => Seclect(3)}
                 title="Blockchain và công nghệ AI"
               />
-              <ButtonIcon
+              {/* <ButtonIcon
                 select={select === 4}
                 onClick={() => Seclect(4)}
                 title="Xây dựng và thiết kế Website"
-              />
+              /> */}
             </div>
           </ContentWrapper>
         </View.Chil2>
@@ -60,6 +66,7 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
+
   @media ${(props) => props.theme.breakpoints.md} {
     justify-content: center;
     align-items: center;
@@ -68,17 +75,28 @@ const ContentWrapper = styled.div`
   .text-wrapper {
     max-width: 60%;
     text-align: justify;
+    padding-left: 2rem;
 
     @media ${(props) => props.theme.breakpoints.md} {
       max-width: 80%;
       text-align: center;
+      padding-left: 0;
     }
   }
 
   .button-wrapper {
     gap: 2rem;
-
     display: flex;
     flex-direction: column;
+
+    @media ${(props) => props.theme.breakpoints.md} {
+      flex-direction: row;
+    }
   }
+`;
+
+const ImageProduct = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-main);
 `;

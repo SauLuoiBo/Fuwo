@@ -13,6 +13,10 @@ Text.Caption = function TextCaption({ children, ...restProps }) {
   return <Caption {...restProps}>{children}</Caption>;
 };
 
+Text.CaptionTitle = function TextCaptionTitle({ children, ...restProps }) {
+  return <CaptionTitle {...restProps}>{children}</CaptionTitle>;
+};
+
 export default Text;
 
 const TextWrapper = styled.p`
@@ -43,4 +47,18 @@ const Caption = styled.p`
   font-weight: 500;
   color: ${(props) => props.color || "white"};
   text-transform: uppercase;
+`;
+
+const CaptionTitle = styled.p`
+  font-size: 40px;
+  font-weight: 500;
+  color: ${(props) => props.color || "white"};
+  text-transform: uppercase;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 34px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 25px;
+  }
 `;

@@ -8,10 +8,10 @@ const theme = {
     //color#212529
     colors: {
       main: "#f8af2b",
-      background1: "#fff",
+      background1: "#1c1e2b",
       background2: "#ff5823",
       primary: "#1f2235",
-      textWhite: "#fff",
+      textWhite: "#bdbdbd",
     },
     //breakpoints for responsive design
     breakpoints: {

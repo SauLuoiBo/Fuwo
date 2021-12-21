@@ -9,10 +9,12 @@ const LanddingPage = () => {
     <Wrapper className="container">
       <img src={LogoLeft} alt="Logo" className="logo-left" />
       <img src={Logo} alt="Logo" className="logo-brand" />
-      <Text.Title>
-        Nghiên cứu và phát triển công nghệ để kiến tạo một thế giới, một tương
-        lai tốt đẹp hơn
-      </Text.Title>
+      <div className="text-wrapper ">
+        <Text.Title>
+          Nghiên cứu và phát triển công nghệ để kiến tạo một thế giới, một tương
+          lai tốt đẹp hơn
+        </Text.Title>
+      </div>
     </Wrapper>
   );
 };
@@ -23,7 +25,7 @@ const Wrapper = styled.div`
   background-color: #f8af2b;
   width: 100%;
 
-  height: 100vh;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,10 +36,18 @@ const Wrapper = styled.div`
     height: fit-content;
   }
 
+  .text-wrapper {
+    transform: translateY(-30px);
+    @media ${(props) => props.theme.breakpoints.md} {
+      transform: none;
+      margin: 2rem 0;
+    }
+  }
+
   .logo-brand {
-    transform: translateY(-100px);
+    transform: translateY(-50px);
     width: 100%;
-    height: 450px;
+    height: 400px;
 
     @media ${(props) => props.theme.breakpoints.lg} {
       transform: none;
