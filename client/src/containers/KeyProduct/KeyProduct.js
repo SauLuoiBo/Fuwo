@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { ProductKey, Text } from "../../components";
-import logo1 from "../../assets/Logos/shoolbus.svg";
+import logo1 from "../../assets/Logos/VTVCab_Schoolbus.png";
 import logo2 from "../../assets/Logos/Mega Shool.svg";
 import logo3 from "../../assets/Logos/VTALENT@2x.svg";
-import logo4 from "../../assets/Logos/EcoStudy.svg";
+import logo4 from "../../assets/Logos/ecostudy.png";
 import logo5 from "../../assets/Logos/pantago.png";
 import logo6 from "../../assets/Logos/Logo.svg";
 
