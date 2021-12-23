@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { Footer } from "../../containers";
+import { Footer, Header } from "../../containers";
 
 const Layout = ({ children }) => {
   return (
     <>
+      <Header />
       <Wrapper>{children}</Wrapper>
       <Footer />
     </>

@@ -6,6 +6,7 @@ import Apply from "./Apply/Apply";
 import KeyProduct from "./KeyProduct/KeyProduct";
 import Customize from "./Customize/Customize";
 import Footer from "./Footer/Footer";
+import Header from "./header/Header";
 
 export {
   LanddingPage,
@@ -16,4 +17,5 @@ export {
   KeyProduct,
   Customize,
   Footer,
+  Header,
 };
