@@ -6,7 +6,9 @@ const Button = (props) => {
   const { text } = props;
   return (
     <Wrapper>
-      <Text.CaptionTitle>{text || "text"}</Text.CaptionTitle>
+      <a href="https://forms.gle/Ae81v6cGJFt8Aj8p7" target="_blank">
+        <Text.CaptionTitle>{text || "text"}</Text.CaptionTitle>
+      </a>
     </Wrapper>
   );
 };
