@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Text } from "../../components";
 import Logo from "../../assets/Logos/LogoTong.svg";
-import LogoLeft from "../../assets/Logos/Logo2.svg";
+import LogoLeft from "../../assets/Logos/Fuwo2.svg";
 
 const LanddingPage = () => {
   return (

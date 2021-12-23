@@ -4,5 +4,16 @@ import Product from "./Product/Product";
 import Introduce from "./Introduce/Introduce";
 import Apply from "./Apply/Apply";
 import KeyProduct from "./KeyProduct/KeyProduct";
+import Customize from "./Customize/Customize";
+import Footer from "./Footer/Footer";
 
-export { LanddingPage, History, Product, Introduce, Apply, KeyProduct };
+export {
+  LanddingPage,
+  History,
+  Product,
+  Introduce,
+  Apply,
+  KeyProduct,
+  Customize,
+  Footer,
+};

@@ -6,6 +6,7 @@ import {
   Introduce,
   Apply,
   KeyProduct,
+  Customize,
 } from "./containers";
 import Theme from "./styles/Theme";
 
@@ -19,6 +20,7 @@ function App() {
         <Introduce />
         <KeyProduct />
         <Apply />
+        <Customize />
       </Layout>
     </Theme>
   );

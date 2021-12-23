@@ -14,6 +14,11 @@ const Product = () => {
       <View>
         <View.Chil1>
           <ImageProduct />
+          {/* <SwipeableViews
+            axis="x"
+            index={select}
+            // onChangeIndex={handleChangeIndex}
+          ></SwipeableViews> */}
         </View.Chil1>
         <View.Chil2>
           <ContentWrapper>
