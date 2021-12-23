@@ -6,7 +6,7 @@ import logo2 from "../../assets/Logos/Mega Shool.svg";
 import logo3 from "../../assets/Logos/cus/hi2.png";
 import logo4 from "../../assets/Logos/ecostudy.png";
 import logo5 from "../../assets/Logos/cus/hi1.jpeg";
-import logo6 from "../../assets/Logos/Logo.svg";
+import logo6 from "../../assets/Logos/cus/hi4.jpg";
 
 const data = [
   {
@@ -34,7 +34,7 @@ const data = [
 
 const KeyProduct = () => {
   return (
-    <Wrapper className="container">
+    <Wrapper className="container" id="product">
       <div className="title-wrapper">
         <Text.Title color="black">sản phẩm nổi bật</Text.Title>
       </div>

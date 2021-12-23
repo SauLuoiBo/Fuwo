@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { Text } from "../../components";
 import Logo from "../../assets/Logos/LogoTong.svg";
-import LogoLeft from "../../assets/Logos/Fuwo2.svg";
+import LogoLeft from "../../assets/Logos/1.png";
 
 const LanddingPage = () => {
   return (
-    <Wrapper className="container">
+    <Wrapper className="container" id="home">
       <img src={LogoLeft} alt="Logo" className="logo-left" />
       <img src={Logo} alt="Logo" className="logo-brand" />
       <div className="text-wrapper ">

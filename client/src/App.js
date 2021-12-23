@@ -7,6 +7,7 @@ import {
   Apply,
   KeyProduct,
   Customize,
+  Modal,
 } from "./containers";
 import Theme from "./styles/Theme";
 
