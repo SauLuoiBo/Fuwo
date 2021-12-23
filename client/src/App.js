@@ -7,10 +7,6 @@ import {
   Apply,
   KeyProduct,
   Customize,
-<<<<<<< Updated upstream
-=======
-  Header,
->>>>>>> Stashed changes
 } from "./containers";
 import Theme from "./styles/Theme";
 import React from "react";
@@ -19,10 +15,6 @@ function App() {
   return (
     <Theme>
       <Layout>
-<<<<<<< Updated upstream
-=======
-        <Header />
->>>>>>> Stashed changes
         <LanddingPage />
         <History />
         <Product />
