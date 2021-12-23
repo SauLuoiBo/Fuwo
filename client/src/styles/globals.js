@@ -68,10 +68,13 @@ export default createGlobalStyle`
       padding: 0 10rem;
     }  
     @media ${(props) => props.theme.breakpoints.md} {
-      padding: 0 5rem;
+      padding: 0 1rem;
     }  
   }
-
+  a, button, img {
+    cursor: pointer;
+    color: var(--color-main);
+  }
 
 
   /* a, button, img {

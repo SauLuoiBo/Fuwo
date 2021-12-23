@@ -1,34 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import { ProductKey, Text } from "../../components";
-import logo1 from "../../assets/Logos/VTVCab_Schoolbus.png";
+import logo1 from "../../assets/Logos/cus/hi3.png";
 import logo2 from "../../assets/Logos/Mega Shool.svg";
-import logo3 from "../../assets/Logos/VTALENT@2x.svg";
+import logo3 from "../../assets/Logos/cus/hi2.png";
 import logo4 from "../../assets/Logos/ecostudy.png";
-import logo5 from "../../assets/Logos/pantago.png";
+import logo5 from "../../assets/Logos/cus/hi1.jpeg";
 import logo6 from "../../assets/Logos/Logo.svg";
 
 const data = [
   {
-    title: "Shoolbus.vn",
+    title: "Schoolbus.vn",
     des: "Nền tảng học trực tuyến tương tác trực tiếp đầu tiên tại Việt Nam.",
     logo: logo1,
-  },
-  {
-    title: "MEGASCHOOL EDU",
-    des: "Nền tảng E-learning của VTVcab",
-    logo: logo2,
   },
   {
     title: "VTALENT",
     des: "Nền tảng E-learning của VTVcab",
     logo: logo3,
   },
-  {
-    title: "ECOSTUDY.EDU.VN",
-    des: "Hệ thống quản lý dành cho tổ chức giáo dục và trường học.",
-    logo: logo4,
-  },
+
   {
     title: "PANTADO.EDU.VN ",
     des: "Hệ thống LMS trong giáo dục.",

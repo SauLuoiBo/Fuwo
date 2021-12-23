@@ -25,6 +25,7 @@ export default LanddingPage;
 const Wrapper = styled.div`
   background-color: #f8af2b;
   width: 100%;
+  overflow: hidden;
 
   height: 100vh;
   display: flex;
