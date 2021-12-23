@@ -9,10 +9,10 @@ const Layout = ({ children }) => {
   const [modal, setModal] = React.useState(false);
   return (
     <>
-      {/* <Button onClick={() => setModal(!modal)}>
+      <Button onClick={() => setModal(!modal)}>
         {modal ? <img src={x} alt="button" /> : <img src={bar} alt="button" />}
-      </Button> */}
-      {/* {modal ? <Modal onClick={() => setModal(false)} /> : null} */}
+      </Button>
+      {modal ? <Modal onClick={() => setModal(false)} /> : null}
 
       <Wrapper>{children}</Wrapper>
       <Footer />
