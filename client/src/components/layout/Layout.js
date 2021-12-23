@@ -1,19 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Footer, Modal } from "../../containers";
-import x from "../../assets/icons/x.svg";
-
-import bar from "../../assets/icons/bar.svg";
 
 const Layout = ({ children }) => {
-  const [modal, setModal] = React.useState(false);
   return (
     <>
-      <Button onClick={() => setModal(!modal)}>
-        {modal ? <img src={x} alt="button" /> : <img src={bar} alt="button" />}
-      </Button>
-      {modal ? <Modal onClick={() => setModal(false)} /> : null}
-
       <Wrapper>{children}</Wrapper>
       <Footer />
     </>
