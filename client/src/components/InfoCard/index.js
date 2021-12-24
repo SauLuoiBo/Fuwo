@@ -3,19 +3,19 @@ import styled from "styled-components";
 import { Text } from "..";
 
 const InforCard = (props) => {
-  const { number, cap, des, color } = props;
+  const { number, cap, des } = props;
   return (
     <Wrapper>
       <div className="round-outner">
         <div className="round-inner">
-          <Text.Title color={color || `var(--color-main)`}>
+          <Text.Title color={`var(--color-main)`}>
             {number || "200 +"}
           </Text.Title>
         </div>
       </div>
       <div className="content">
-        <Text.Caption color={color || null}>{cap || "năm"}</Text.Caption>
-        <Text color={color || null}>{des || "hoat dong"}</Text>
+        <Text.Caption>{cap || "năm"}</Text.Caption>
+        <Text>{des || "hoat dong"}</Text>
       </div>
     </Wrapper>
   );

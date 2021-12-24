@@ -16,9 +16,14 @@ const Apply = () => {
           trẻ trung và đầy thử thách.
         </Text>
       </div>
-      <div className="button-wrapper">
+      <a
+        className="button-wrapper"
+        href="https://docs.google.com/forms/d/e/1FAIpQLScuGs1rPzIWgVMIyQtMusLf2rcxfc6cdcQw5F1f1ZbKaiLX5w/viewform"
+        target="_blank"
+        rel="noreferrer"
+      >
         <Button text="ỨNG TUYỂN NGAY" />
-      </div>
+      </a>
     </Wrapper>
   );
 };

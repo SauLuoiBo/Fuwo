@@ -7,14 +7,14 @@ import logo3 from "../../assets/Logos/pantodo.jpeg";
 
 const Customize = () => {
   const [pos, setPos] = React.useState(null);
-  const [index, setIndex] = React.useState(0);
+  const [index, setIndex] = React.useState(18);
 
   React.useEffect(() => {
     const process = () => {
       let y;
 
-      y = index + 1;
-      if (y > 18) y = 0;
+      y = index - 1;
+      if (y < 0) y = 18;
 
       setIndex(y);
       setPos(`${y * 5}rem`);
@@ -80,6 +80,14 @@ const ProductWrapper = styled.div`
   overflow: hidden;
   justify-content: flex-start;
   align-items: flex-start;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 0 20rem;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 0 5rem;
+  }
 
   .content {
     width: 100%;

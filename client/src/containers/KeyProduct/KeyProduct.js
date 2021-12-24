@@ -7,6 +7,7 @@ import logo3 from "../../assets/Logos/cus/hi2.png";
 
 import logo5 from "../../assets/Logos/cus/hi1.jpeg";
 import logo6 from "../../assets/Logos/cus/hi4.jpg";
+import { Roll } from "react-reveal";
 
 const data = [
   {
@@ -39,14 +40,16 @@ const KeyProduct = () => {
         <Text.Title color="black">sản phẩm nổi bật</Text.Title>
       </div>
       <ProductWrapper>
-        {data.map((item, index) => (
-          <ProductKey
-            title={item.title}
-            des={item.des}
-            logo={item.logo}
-            key={index}
-          />
-        ))}
+        <Roll left>
+          {data.map((item, index) => (
+            <ProductKey
+              title={item.title}
+              des={item.des}
+              logo={item.logo}
+              key={index}
+            />
+          ))}
+        </Roll>
       </ProductWrapper>
     </Wrapper>
   );

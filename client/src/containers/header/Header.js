@@ -5,6 +5,8 @@ import x from "../../assets/icons/huhu.svg";
 import fuwo from "../../assets/Logos/2.png";
 import fuwo2 from "../../assets/Logos/1.png";
 import { ScrollButton } from "../../components";
+import Bounce from "react-reveal/Bounce";
+import { Zoom } from "react-reveal";
 
 const data = [
   {
@@ -41,24 +43,29 @@ const Header = () => {
           {modal ? <img src={x} alt="bar" /> : <img src={bar} alt="x" />}
         </Buttonhi>
       </Wrapper>
+
       <ModalWrapper visible={modal} onClick={() => setModal(false)}>
-        <div className="left">
-          <img src={fuwo2} alt="logo" />
-        </div>
-        <div className="right">
-          <div className="menu-wrapper ">
-            {data.map((data, i) => {
-              return (
-                <ScrollButton
-                  key={i}
-                  onClick={() => setModal(false)}
-                  text={data.name}
-                  link={data.link}
-                />
-              );
-            })}
+        <Zoom>
+          <div className="left">
+            <img src={fuwo2} alt="logo" />
           </div>
-        </div>
+          <div className="right">
+            <Bounce top>
+              <div className="menu-wrapper ">
+                {data.map((data, i) => {
+                  return (
+                    <ScrollButton
+                      key={i}
+                      onClick={() => setModal(false)}
+                      text={data.name}
+                      link={data.link}
+                    />
+                  );
+                })}
+              </div>
+            </Bounce>
+          </div>
+        </Zoom>
       </ModalWrapper>
     </>
   );

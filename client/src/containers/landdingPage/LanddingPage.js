@@ -3,16 +3,20 @@ import styled from "styled-components";
 import { Text } from "../../components";
 import Logo from "../../assets/Logos/LogoTong.svg";
 import LogoLeft from "../../assets/Logos/1.png";
+import Fade from "react-reveal";
 
 const LanddingPage = () => {
   return (
     <Wrapper className="container" id="home">
-      <div className="logo-left">
-        <img src={LogoLeft} alt="Logo" />
-        <Text.Caption color="black"> Hotline: 096 881 3228</Text.Caption>
-      </div>
-
-      <img src={Logo} alt="Logo" className="logo-brand" />
+      <Fade left>
+        <div className="logo-left">
+          <img src={LogoLeft} alt="Logo" />
+          <Text.Caption color="black"> Hotline: 096 881 3228</Text.Caption>
+        </div>
+      </Fade>
+      <Fade top>
+        <img src={Logo} alt="Logo" className="logo-brand" />
+      </Fade>
       <div className="text-wrapper ">
         <Text.Title color="black">Future of the world</Text.Title>
         <Text.Caption>

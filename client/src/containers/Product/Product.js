@@ -14,7 +14,7 @@ const Item = (props) => {
     <ImgWrapper>
       <img src={icon || image1} alt="ads" />
       <div className="text-wrapper">
-        <Text>{text || "text"}</Text>
+        <Text color="black">{text || "text"}</Text>
       </div>
     </ImgWrapper>
   );
