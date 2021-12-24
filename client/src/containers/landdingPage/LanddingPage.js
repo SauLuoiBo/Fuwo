@@ -7,7 +7,11 @@ import LogoLeft from "../../assets/Logos/1.png";
 const LanddingPage = () => {
   return (
     <Wrapper className="container" id="home">
-      <img src={LogoLeft} alt="Logo" className="logo-left" />
+      <div className="logo-left">
+        <img src={LogoLeft} alt="Logo" />
+        <Text.Caption color="black"> Hotline: 096 881 3228</Text.Caption>
+      </div>
+
       <img src={Logo} alt="Logo" className="logo-brand" />
       <div className="text-wrapper ">
         <Text.Title color="black">Future of the world</Text.Title>
@@ -69,10 +73,17 @@ const Wrapper = styled.div`
     position: absolute;
     top: 50px;
     left: 0px;
-    width: 200px;
+    width: 300px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @media ${(props) => props.theme.breakpoints.lg} {
       display: none;
+    }
+    img {
+      width: 100%;
     }
   }
 `;

@@ -85,6 +85,7 @@ const Wrapper = styled.header`
   .logo {
     display: none;
     height: 7rem;
+    max-width: 100px;
     padding: 5px;
 
     img {

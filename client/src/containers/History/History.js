@@ -7,10 +7,10 @@ const History = () => {
   return (
     <Wrapper id="history">
       <Content>
-        <InforCard number="3+" cap="Năm" des="hoạt động và phát triển" />
         <InforCard number="100+" cap="Nhân sự" des="giàu kinh nghiệm" />
         <InforCard number="10+" cap="Dự án" des="về nhiều lĩnh vực" />
-        <InforCard number="4" cap="Nhóm" des="sản phẩm chủ lực" />
+        <InforCard number="3+" cap="Năm" des="hoạt động, phát triển" />
+        <InforCard color="red" number="3" cap="Nhóm" des="sản phẩm, dịch vụ" />
       </Content>
     </Wrapper>
   );

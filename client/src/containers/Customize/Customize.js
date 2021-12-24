@@ -6,6 +6,25 @@ import logo2 from "../../assets/Logos/equest.png";
 import logo3 from "../../assets/Logos/pantodo.jpeg";
 
 const Customize = () => {
+  const [pos, setPos] = React.useState(null);
+  const [index, setIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    const process = () => {
+      let y;
+
+      y = index + 1;
+      if (y > 18) y = 0;
+
+      setIndex(y);
+      setPos(`${y * 5}rem`);
+    };
+    let timer = setTimeout(() => process(), 1000);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [pos, index]);
+
   return (
     <Wrapper id="customize">
       <div className="title-wrapper">
@@ -20,10 +39,18 @@ const Customize = () => {
       </div>
 
       <ProductWrapper>
-        <CustomCard text="VTVcab" />
-        <CustomCard text="VNE group" logo={logo1} />
-        <CustomCard text="Equest" logo={logo2} />
-        <CustomCard text="Pantado" logo={logo3} />
+        <div className="content">
+          <Content pos={pos}>
+            <CustomCard text="VTVcab" />
+            <CustomCard text="VNE group" logo={logo1} />
+            <CustomCard text="Equest" logo={logo2} />
+            <CustomCard text="Pantado" logo={logo3} />
+            <CustomCard text="VTVcab" />
+            <CustomCard text="VNE group" logo={logo1} />
+            <CustomCard text="Equest" logo={logo2} />
+            <CustomCard text="Pantado" logo={logo3} />
+          </Content>
+        </div>
       </ProductWrapper>
     </Wrapper>
   );
@@ -48,12 +75,31 @@ const Wrapper = styled.section`
 
 const ProductWrapper = styled.div`
   width: 100%;
-  display: grid;
-  padding: 2rem 5rem;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  padding: 0 30rem;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: flex-start;
 
-  @media ${(props) => props.theme.breakpoints.md} {
-    grid-template-columns: repeat(2, 1fr);
+  .content {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
   }
+`;
+
+const Content = styled.div`
+  --pos: ${(props) => props.pos || 0};
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20rem;
+  width: 100%;
+
+  transform: translateX(var(--pos));
 `;

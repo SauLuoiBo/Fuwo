@@ -93,19 +93,19 @@ const Product = () => {
               <ButtonIcon
                 select={select === 1}
                 onClick={() => Seclect(1)}
-                title="Xây dựng và thiết kế Website"
+                title="Gia công công nghệ"
               />
               <ButtonIcon
                 img={icon1}
                 select={select === 2}
                 onClick={() => Seclect(2)}
-                title="Xây dựng và phát triển App"
+                title="Cung ứng nhân lực công nghệ"
               />
               <ButtonIcon
                 img={icon2}
                 select={select === 3}
                 onClick={() => Seclect(3)}
-                title="Blockchain và công nghệ AI"
+                title="Đào tạo nhân sự công nghệ"
               />
               {/* <ButtonIcon
                 select={select === 4}
