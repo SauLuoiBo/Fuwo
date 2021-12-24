@@ -6,6 +6,25 @@ import fuwo from "../../assets/Logos/2.png";
 import fuwo2 from "../../assets/Logos/1.png";
 import { ScrollButton } from "../../components";
 
+const data = [
+  {
+    name: "Home",
+    link: "home",
+  },
+  {
+    name: "Tuyển dụng",
+    link: "apply",
+  },
+  {
+    name: "Sản phẩm",
+    link: "product",
+  },
+  {
+    name: "Đối tác",
+    link: "customize",
+  },
+];
+
 const Header = () => {
   const [modal, setModal] = React.useState(false);
   return (
@@ -23,7 +42,18 @@ const Header = () => {
           <img src={fuwo2} />
         </div>
         <div className="right">
-          <ScrollButton onClick={() => setModal(false)} />
+          <div className="menu-wrapper ">
+            {data.map((data, i) => {
+              return (
+                <ScrollButton
+                  key={i}
+                  onClick={() => setModal(false)}
+                  text={data.name}
+                  link={data.link}
+                />
+              );
+            })}
+          </div>
         </div>
       </ModalWrapper>
     </>
@@ -121,5 +151,12 @@ const ModalWrapper = styled.div`
     align-items: center;
     position: relative;
     z-index: 4000;
+  }
+
+  .menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 `;

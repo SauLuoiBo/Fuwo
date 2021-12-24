@@ -7,7 +7,7 @@ import logo3 from "../../assets/Logos/pantodo.jpeg";
 
 const Customize = () => {
   return (
-    <Wrapper>
+    <Wrapper id="customize">
       <div className="title-wrapper">
         <Text.Title color="black">đối tác chiến lược</Text.Title>
         <Text color="black">

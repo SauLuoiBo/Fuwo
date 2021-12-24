@@ -5,7 +5,7 @@ import bg from "../../assets/background/snum.jpeg";
 
 const History = () => {
   return (
-    <Wrapper>
+    <Wrapper id="history">
       <Content>
         <InforCard number="3+" cap="Năm" des="hoạt động và phát triển" />
         <InforCard number="100+" cap="Nhân sự" des="giàu kinh nghiệm" />

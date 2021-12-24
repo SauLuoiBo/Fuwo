@@ -5,7 +5,7 @@ import { Button, Text } from "../../components";
 
 const Apply = () => {
   return (
-    <Wrapper>
+    <Wrapper id="apply">
       <div className="title-wrapper">
         <Text.Title color="var(--color-main)">CƠ HỘI NGHỀ NGHIỆP</Text.Title>
       </div>
