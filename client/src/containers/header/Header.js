@@ -16,6 +16,10 @@ const data = [
     link: "apply",
   },
   {
+    name: "Dịch vụ",
+    link: "service",
+  },
+  {
     name: "Sản phẩm",
     link: "product",
   },
@@ -31,7 +35,7 @@ const Header = () => {
     <>
       <Wrapper>
         <div className="logo">
-          <img src={fuwo} />
+          <img src={fuwo} alt="logo" />
         </div>
         <Buttonhi onClick={() => setModal(!modal)}>
           {modal ? <img src={x} alt="bar" /> : <img src={bar} alt="x" />}
@@ -39,7 +43,7 @@ const Header = () => {
       </Wrapper>
       <ModalWrapper visible={modal} onClick={() => setModal(false)}>
         <div className="left">
-          <img src={fuwo2} />
+          <img src={fuwo2} alt="logo" />
         </div>
         <div className="right">
           <div className="menu-wrapper ">

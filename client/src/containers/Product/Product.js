@@ -10,7 +10,7 @@ const Product = () => {
     setSelect(index);
   };
   return (
-    <section>
+    <section id="service">
       <View>
         <View.Chil1>
           <ImageProduct />

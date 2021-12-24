@@ -9,7 +9,7 @@ const Customize = () => {
   return (
     <Wrapper id="customize">
       <div className="title-wrapper">
-        <Text.Title color="black">đối tác chiến lược</Text.Title>
+        <Text.Title color="black">ĐỐI TÁC CHIẾN LƯỢC</Text.Title>
         <Text color="black">
           Tuy là công ty non trẻ nhưng Fuwo cũng nhận được khá nhiều sự tin
           tưởng từ các đối tác uy tín, minh chứng cho mối quan hệ hợp tác hiệu

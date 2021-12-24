@@ -22,7 +22,7 @@ export default ScrollButton;
 
 const LinkS = styled(Link)`
   color: var(--color-text);
-  font-size: 1.6rem;
+  font-size: 3rem;
   font-weight: 600;
   :hover {
     transform: scale(1.1);
