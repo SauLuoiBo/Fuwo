@@ -5,8 +5,8 @@ import icon1 from "../../assets/icons/app.png";
 import icon2 from "../../assets/icons/icons8-ai-256.png";
 
 import image1 from "../../assets/images/laptop-1563335546.png";
-import image2 from "../../assets/images/qly-tai-chinh-1563177459.png";
-import image3 from "../../assets/images/lms-1563177459.png";
+import image2 from "../../assets/images/hi.png";
+import image3 from "../../assets/images/hu.png";
 
 const Item = (props) => {
   const { icon, text } = props;

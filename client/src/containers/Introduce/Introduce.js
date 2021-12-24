@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Text } from "../../components";
+import bg from "../../assets/background/scareer.jpeg";
 
 const Introduce = () => {
   return (
@@ -28,7 +29,9 @@ const Wrapper = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-background1);
+  background: url(${bg});
+  background-attachment: fixed;
+  background-size: cover;
   padding: 2rem 0;
 
   .title-wrapper {
