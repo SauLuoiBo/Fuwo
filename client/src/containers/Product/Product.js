@@ -78,7 +78,7 @@ const Product = () => {
         <View.Chil2>
           <ContentWrapper>
             <div className="text-wrapper">
-              <Text.Title color="black">Sản phẩm</Text.Title>
+              <Text.Title color="black">Sản phẩm và dịch vụ</Text.Title>
               <Text color="black">
                 Bằng việc áp dụng công nghệ lõi là Trí tuệ nhân tạo (AI),
                 Blockchain, Công nghệ thực tế ảo, thực tế ảo tăng cường (AR/VR)
@@ -135,7 +135,7 @@ const ContentWrapper = styled.div`
 
   .text-wrapper {
     max-width: 70%;
-    text-align: justify;
+    text-align: left;
     padding-left: 2rem;
 
     @media ${(props) => props.theme.breakpoints.md} {
