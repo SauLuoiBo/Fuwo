@@ -11,7 +11,7 @@ const LanddingPage = () => {
       <Fade left>
         <div className="logo-left">
           <img src={LogoLeft} alt="Logo" />
-          <Text.Caption color="black"> Hotline: 096 881 3228</Text.Caption>
+          {/* <Text.Caption color="black"> Hotline: 096 881 3228</Text.Caption> */}
         </div>
       </Fade>
       <Fade top>
