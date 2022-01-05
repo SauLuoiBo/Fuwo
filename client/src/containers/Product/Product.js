@@ -184,6 +184,10 @@ const ImgWrapper = styled.div`
     margin-top: 2rem;
     max-width: 400px;
     text-align: center;
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+      max-width: 350px;
+    }
   }
 `;
 

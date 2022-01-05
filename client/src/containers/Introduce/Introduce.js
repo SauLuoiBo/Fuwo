@@ -41,5 +41,8 @@ const Wrapper = styled.section`
   .text-wrapper {
     text-align: center;
     max-width: 800px;
+    @media ${(props) => props.theme.breakpoints.sm} {
+      max-width: 350px;
+    }
   }
 `;
