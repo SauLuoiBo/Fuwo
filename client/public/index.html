@@ -7,13 +7,15 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Nghiên cứu và phát triển công nghệ để kiến tạo một thế giới, một tương lại tốt đẹp hơn" color='red'
+      content="Nghiên cứu và phát triển công nghệ để kiến tạo một thế giới, một tương lại tốt đẹp hơn"
+      color="red"
     />
     <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/fuwo.png" />
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="manifest" crossorigin="use-credentials" href="/manifest.json" />ß
+    <link rel="manifest" crossorigin="use-credentials" href="/manifest.json" />
+    ß
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,15 +50,16 @@
       LAI TỐT ĐẸP HƠN.</noscript
     >
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./serviceworker.js")
+            .then((reg) => console.log("Success: ", reg.scope))
+            .catch((err) => console.log("Failure: ", err));
+        });
+      }
+    </script>
   </body>
 </html>
